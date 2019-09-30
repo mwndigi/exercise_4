@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<img src="trees.png" alt="trees">
+
+<button onclick="getResult()">Try it</button>
+
+<script>
+    var result;
+    function promptNumber(question) {
+        result = Number(prompt(question));
+        if (Number.isNaN(result)) return null;
+        else return result;
+    }
+    function getResult() {
+        console.log("How many trees do you see?");
+        console.log(promptNumber("How many trees do you see?"));
+        console.log(result);
+    }
+</script>
+
+</body>
+</html>
+
+
+

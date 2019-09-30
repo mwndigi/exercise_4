@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<p>With the debugger turned on, the code inside the script element should stop executing before it executes the third line.</p>
+
+<p>Source: <a href="https://www.w3schools.com/jsref/jsref_debugger.asp">w3school JS debugger</a></p>
+
+<script>
+    var x = 15 * 5;
+    debugger;
+    console.log(x);
+    debugger;
+    document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

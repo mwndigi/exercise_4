@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p>Assertions example.</p>
+
+<script>
+    function firstElement(array) {
+        if (array.length == 0) {
+            throw new Error("firstElement called with []");
+        }
+        return array[0];
+    }
+
+    let noNumbers = new firstElement([]);
+    // Uncaught Error: firstElement called with []
+    // Add number to array to remove error
+    let listOfNumbers = new firstElement([2, 3, 4]);
+</script>
+
+</body>
+</html>
+
+
+
